@@ -7,6 +7,7 @@ import { HabitRadarWidget } from './components/layout/HabitRadarWidget';
 import { IntroduccionSection } from './components/introduccion/IntroduccionSection';
 import { ContenidoSection } from './components/contenido/ContenidoSection';
 import { EvaluacionSection } from './components/evaluacion/EvaluacionSection';
+import { ErrorBoundary } from './components/common/ErrorBoundary';
 
 const MainAppContent: React.FC = () => {
   const [activeSection, setActiveSection] = useState<MainSection>('introduccion');
@@ -57,15 +58,21 @@ const MainAppContent: React.FC = () => {
       {/* Main Container */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {activeSection === 'introduccion' && (
-          <IntroduccionSection onGoToContenido={() => handleSelectSection('contenido')} />
+          <ErrorBoundary fallbackTitle="Error al cargar la Sección 1: Introducción">
+            <IntroduccionSection onGoToContenido={() => handleSelectSection('contenido')} />
+          </ErrorBoundary>
         )}
 
         {activeSection === 'contenido' && (
-          <ContenidoSection onGoToEvaluation={() => handleSelectSection('evaluacion')} />
+          <ErrorBoundary fallbackTitle="Error al cargar la Sección 2: Contenido">
+            <ContenidoSection onGoToEvaluation={() => handleSelectSection('evaluacion')} />
+          </ErrorBoundary>
         )}
 
         {activeSection === 'evaluacion' && (
-          <EvaluacionSection />
+          <ErrorBoundary fallbackTitle="Error al cargar la Sección 3: Evaluación">
+            <EvaluacionSection />
+          </ErrorBoundary>
         )}
       </main>
 

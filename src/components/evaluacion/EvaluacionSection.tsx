@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { DragDropActivity } from './DragDropActivity';
 import { QuizActivity } from './QuizActivity';
 import { PracticalChallengeActivity } from './PracticalChallengeActivity';
-import { Puzzle, FileQuestion, FolderGit2, CheckCircle2, Award, Download, School, Layers } from 'lucide-react';
+import { Puzzle, FileQuestion, FolderGit2, CheckCircle2, Award, School, Layers, Check } from 'lucide-react';
 import { useHabitRadar } from '../../context/HabitRadarContext';
-import { getAssetUrl } from '../../utils/assetUrl';
 
 export const EvaluacionSection: React.FC = () => {
-  const { state, profile, scormInfo, radarScores } = useHabitRadar();
+  const { profile, scormInfo } = useHabitRadar();
   const [activeTab, setActiveTab] = useState<'all' | 'act1' | 'act2' | 'act3'>('all');
+
+  const isLmsConnected = Boolean(scormInfo?.connected);
+  const studentName = scormInfo?.studentName || 'Estudiante';
+  const scormVersion = scormInfo?.version || '1.2';
 
   return (
     <div className="space-y-12 sm:space-y-16 animate-fadeIn">
@@ -56,12 +59,12 @@ export const EvaluacionSection: React.FC = () => {
                 Sincronización con Plataformas Educativas (LMS)
               </h3>
               <span className={`text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full border ${
-                scormInfo.connected 
+                isLmsConnected 
                   ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400' 
                   : 'bg-slate-800 border-slate-700 text-slate-400'
               }`}>
-                {scormInfo.connected 
-                  ? `Conectado a LMS (${scormInfo.studentName || 'Estudiante'} · SCORM ${scormInfo.version})` 
+                {isLmsConnected 
+                  ? `Conectado a LMS (${studentName} · SCORM ${scormVersion})` 
                   : 'Estándar SCORM 1.2 Compatible'}
               </span>
             </div>
@@ -72,15 +75,10 @@ export const EvaluacionSection: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-2 self-stretch md:self-auto shrink-0">
-          <a
-            href={getAssetUrl('ova-blender-scorm.zip')}
-            download="ova-blender-scorm.zip"
-            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 font-bold text-xs shadow-md shadow-amber-500/20 transition-all"
-            title="Descargar paquete .ZIP en formato SCORM 1.2 para importar en tu aula virtual"
-          >
-            <Download className="w-4 h-4 text-slate-950" />
-            <span>Descargar Paquete SCORM (.ZIP)</span>
-          </a>
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-emerald-400 font-mono">
+            <Check className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Módulo Evaluativo Activo</span>
+          </div>
         </div>
       </div>
 

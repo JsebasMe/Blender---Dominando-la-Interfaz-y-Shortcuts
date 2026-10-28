@@ -32,6 +32,11 @@ interface HabitRadarContextType {
     modelado: number;      // 0 - 100
     evaluacion: number;    // 0 - 100
   };
+  scormInfo: {
+    connected: boolean;
+    studentName: string;
+    version: string;
+  };
   recordInstallStep: (stepNumber: number) => void;
   recordHotspot: (hotspotId: string) => void;
   recordShortcut: (shortcut: string) => void;
@@ -254,6 +259,11 @@ export const HabitRadarProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           transformacion: transformacionScore,
           modelado: modeladoScore,
           evaluacion: evaluacionScore
+        },
+        scormInfo: {
+          connected: scorm.isLMSConnected(),
+          studentName: scorm.getLearnerName(),
+          version: '1.2'
         },
         recordInstallStep,
         recordHotspot,
