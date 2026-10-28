@@ -1,0 +1,6 @@
+{
+  "name": "Blender - Dominando la Interfaz y Shortcuts",
+  "description": "Objeto Virtual de Aprendizaje (OVA) interactivo sobre la interfaz y atajos de teclado de Blender. Universidad Simón Bolívar, Ingeniería Multimedia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

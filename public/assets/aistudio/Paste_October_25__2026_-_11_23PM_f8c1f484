@@ -1,0 +1,649 @@
+# PROMPT MAESTRO — DESARROLLO DEL OVA “BLENDER: DOMINANDO LA INTERFAZ Y SHORTCUTS”
+
+## 1. ROL Y OBJETIVO GENERAL
+
+Actúa como un equipo interdisciplinario experto en diseño instruccional, desarrollo web educativo, UX/UI, diseño gráfico, accesibilidad, gamificación y enseñanza de Blender para principiantes.
+
+Tu tarea es diseñar y desarrollar un **Objeto Virtual de Aprendizaje (OVA) completo, funcional, interactivo, visualmente atractivo y académicamente riguroso**, basado en el documento Word que adjuntaré a esta conversación.
+
+El título oficial del OVA es:
+
+**Blender - Dominando la Interfaz y Shortcuts**
+
+El objetivo es que el estudiante aprenda a reconocer la interfaz de Blender, navegar por el espacio tridimensional, utilizar atajos de teclado y aplicar herramientas básicas de modelado mediante explicaciones claras, demostraciones visuales y actividades interactivas.
+
+No quiero una página web genérica ni un documento de texto convertido en una página. Quiero una experiencia educativa digital que parezca un producto profesional, moderno, bien diseñado y fácil de utilizar.
+
+## 2. DOCUMENTO WORD: FUENTE PRINCIPAL Y OBLIGATORIA
+
+Antes de desarrollar el OVA, lee y analiza completamente el archivo Word que adjuntaré.
+
+Este documento contiene el guion técnico-literario, la contextualización, las competencias, los contenidos, las subtemáticas, la bibliografía y las actividades propuestas. Debes utilizarlo como la fuente principal para organizar y redactar el recurso.
+
+Cumple obligatoriamente las siguientes instrucciones:
+
+1. Respeta la estructura pedagógica, los títulos, las competencias, las temáticas, las subtemáticas y las actividades definidas en el Word.
+2. No ignores, elimines ni sustituyas contenidos importantes del documento.
+3. Reorganiza la información para que sea didáctica, progresiva y fácil de comprender, sin cambiar su intención académica.
+4. Puedes mejorar la redacción, corregir errores ortográficos y adaptar el lenguaje para que sea natural y comprensible para principiantes.
+5. Conserva los términos técnicos de Blender y explica su significado en español cuando aparezcan por primera vez.
+6. No inventes referencias bibliográficas, autores, citas textuales, resultados de investigaciones ni enlaces.
+7. Si una cita del documento presenta datos incompletos, como “Autor, Año”, no la presentes como una referencia válida. Busca una fuente verificable si tienes acceso a investigación web o señala que necesita verificación.
+8. Cuando incorpores información externa, intégrala de forma coherente con el Word y distingue las fuentes utilizadas.
+9. No reemplaces silenciosamente el contenido académico por información genérica generada por IA.
+10. Si una sección del Word no contiene suficiente información para desarrollar una afirmación, utiliza una fuente fiable o limita la explicación a lo que realmente se encuentra documentado.
+
+El resultado debe conservar la identidad académica del guion original y transformarlo en una experiencia de aprendizaje digital.
+
+## 3. ESTRUCTURA GENERAL: SOLAMENTE TRES SECCIONES PRINCIPALES
+
+La navegación principal del OVA debe contener exactamente estas tres secciones:
+
+1. **Introducción**
+2. **Contenido**
+3. **Evaluación**
+
+No crees secciones principales adicionales como Inicio, Bibliografía, Recursos, Acerca de nosotros o Conclusiones. Estos elementos pueden aparecer dentro de las tres secciones existentes cuando sea necesario.
+
+La portada inicial debe formar parte de la sección Introducción.
+
+### Datos institucionales obligatorios
+
+En la portada, presenta los siguientes datos:
+
+**Título:** Blender - Dominando la Interfaz y Shortcuts
+
+**Autores:**
+- Juan Sebastian Mendieta Pineda
+- Danna Nickol Duarte Duarte
+
+**Institución:** Universidad Simón Bolívar, campus Cúcuta.
+
+**Programa académico:** Ingeniería Multimedia.
+
+Incluye una presentación visual elegante de los autores y la institución. Los datos deben ser legibles y estar integrados en el diseño, sin ocupar demasiado espacio.
+
+## 4. DISEÑO VISUAL Y EXPERIENCIA DE USUARIO
+
+Diseña el OVA con una estética contemporánea inspirada en plataformas educativas digitales de alta calidad, aplicaciones creativas y herramientas profesionales de diseño 3D.
+
+### Identidad visual
+
+Utiliza una estética tecnológica, creativa y minimalista inspirada en Blender y el modelado tridimensional.
+
+Paleta de colores sugerida:
+- Fondo principal oscuro: gris carbón o negro suave.
+- Superficies secundarias: gris grafito.
+- Color de acento: naranja inspirado en Blender.
+- Color complementario: azul o violeta utilizado moderadamente.
+- Texto principal: blanco o gris muy claro.
+- Texto secundario: gris claro con contraste suficiente.
+
+Puedes incorporar fondos claros en determinadas tarjetas si favorecen la legibilidad, pero conserva una identidad visual coherente en todo el OVA.
+
+### Tipografía
+
+Utiliza una tipografía moderna y muy legible, como Inter, Manrope o una alternativa similar.
+
+Establece una jerarquía tipográfica clara:
+- Títulos destacados.
+- Subtítulos diferenciados.
+- Párrafos cómodos de leer.
+- Etiquetas y explicaciones breves.
+- Teclas de acceso rápido representadas como pequeñas teclas visuales.
+
+Evita los textos diminutos, los párrafos excesivamente largos y los bloques densos de información.
+
+### Distribución
+
+Implementa una interfaz organizada con:
+- Barra de navegación principal con las tres secciones.
+- Indicador visual de la sección activa.
+- Contenedor central con ancho de lectura cómodo.
+- Tarjetas informativas para conceptos importantes.
+- Paneles desplegables para ampliar información.
+- Áreas específicas para imágenes, videos y demostraciones.
+- Botones visibles para avanzar, retroceder, practicar y consultar recursos.
+- Indicadores de progreso.
+- Diseño adaptable a computadores, tabletas y celulares.
+
+### Reglas de legibilidad
+
+**Todos los párrafos y textos explicativos deben tener alineación justificada**, especialmente el contenido académico.
+
+Las excepciones permitidas son títulos, botones, etiquetas de interfaz, tablas, indicadores numéricos y textos breves dentro de componentes interactivos cuando justificarlos perjudique su legibilidad.
+
+No justifiques los textos mediante espacios manuales. Implementa la alineación correctamente en el diseño.
+
+Usa interlineado cómodo, márgenes consistentes, suficiente espacio en blanco y contraste accesible. Evita animaciones innecesarias, efectos exagerados, fondos recargados y elementos que distraigan del aprendizaje.
+
+El resultado debe verse profesional, limpio, organizado y visualmente atractivo.
+
+## 5. SECCIÓN 1: INTRODUCCIÓN
+
+Esta sección debe presentar el OVA, explicar su propósito y orientar al estudiante antes de comenzar las lecciones.
+
+### 5.1. Portada de bienvenida
+
+Crea una portada atractiva con:
+- Título del OVA.
+- Nombres de los autores.
+- Universidad Simón Bolívar, campus Cúcuta.
+- Programa de Ingeniería Multimedia.
+- Una composición visual relacionada con Blender y el modelado 3D.
+- Un botón principal: “Comenzar aprendizaje”.
+- Una indicación del tiempo estimado de estudio: 30 minutos.
+- Una breve descripción de lo que aprenderá el estudiante.
+
+La portada debe tener una composición visual sólida, sin exceso de texto y con una jerarquía clara.
+
+### 5.2. Presentación y contextualización
+
+Utiliza la contextualización del Word para explicar:
+- Qué es Blender.
+- Para qué se utiliza.
+- Por qué es importante conocer su interfaz.
+- Cómo los atajos de teclado ayudan a mejorar el flujo de trabajo.
+- Qué aprenderá el estudiante durante el OVA.
+
+Redacta con un lenguaje claro, natural y educativo. No conviertas la presentación en un texto académico excesivamente largo.
+
+### 5.3. Competencias de aprendizaje
+
+Presenta las competencias del Word separadas en dos tarjetas:
+
+**SABER:** reconocer los componentes de la interfaz, comprender las aplicaciones de Blender y conocer los atajos fundamentales.
+
+**SABER HACER:** aplicar los atajos y las herramientas básicas para navegar, transformar y editar objetos tridimensionales.
+
+Respeta el contenido específico del documento y no inventes competencias nuevas que cambien sus objetivos.
+
+### 5.4. Tutorial interactivo para instalar Blender
+
+Esta subsección es obligatoria y debe aparecer dentro de Introducción.
+
+Crea un tutorial paso a paso para una persona que nunca ha instalado Blender.
+
+Incluye:
+
+**Paso 1. Acceder a la página oficial**
+
+Enlace oficial:
+https://www.blender.org/download/
+
+**Paso 2. Seleccionar el sistema operativo**
+
+Explica cómo identificar la versión apropiada para Windows, macOS o Linux. Presenta únicamente las opciones que estén disponibles y verificadas en la página oficial.
+
+**Paso 3. Descargar Blender**
+
+Explica cómo iniciar la descarga desde la página oficial y cómo reconocer el archivo descargado.
+
+**Paso 4. Instalar el programa**
+
+Explica el procedimiento correspondiente al sistema operativo. Para Windows, describe cómo abrir el instalador, aceptar los pasos del asistente y finalizar la instalación. Para otros sistemas, adapta las instrucciones al método oficial disponible.
+
+**Paso 5. Abrir Blender**
+
+Explica cómo ejecutar el programa y reconocer la pantalla inicial.
+
+**Paso 6. Verificar que todo funciona**
+
+Propón una comprobación sencilla: abrir Blender, identificar el cubo inicial y reconocer la vista 3D.
+
+Cada paso debe contener:
+- Número y título.
+- Explicación breve.
+- Captura de pantalla ilustrativa o espacio reservado para ella.
+- Indicador de progreso.
+- Botón para continuar.
+- Enlace oficial cuando corresponda.
+
+Agrega una barra de progreso que se actualice al completar los pasos.
+
+Incluye una nota que indique que las pantallas y opciones pueden variar según el sistema operativo y la versión instalada.
+
+No inventes botones, pantallas ni procedimientos. Verifica las instrucciones con la documentación oficial de Blender.
+
+### 5.5. Videos de bienvenida y recursos audiovisuales
+
+Reserva un espacio para un video introductorio que pueda incorporar posteriormente.
+
+Utiliza un contenedor visual con proporción 16:9, título, descripción y controles de reproducción. Si el video todavía no está disponible, muestra un marcador de posición elegante, no un reproductor roto.
+
+Permite sustituir fácilmente el marcador por un video propio o una URL válida.
+
+## 6. SECCIÓN 2: CONTENIDO
+
+Esta será la sección educativa principal.
+
+Debe contener las cinco temáticas definidas en el Word, con sus respectivas subtemáticas. Organiza las lecciones mediante tarjetas, un índice interno o una navegación secundaria que no modifique las tres secciones principales.
+
+Respeta el orden pedagógico del documento.
+
+### TEMÁTICA 1. INTRODUCCIÓN A BLENDER
+
+Explica qué es Blender, su naturaleza gratuita y de código abierto, y su utilidad en la creación de contenido tridimensional.
+
+Presenta sus principales áreas de trabajo:
+- Modelado.
+- Rigging.
+- Animación.
+- Simulación.
+- Renderizado.
+- Composición.
+
+Usa tarjetas visuales con iconos o ilustraciones para que cada aplicación sea fácil de reconocer.
+
+Explica los conceptos con ejemplos concretos y lenguaje de principiante. No atribuyas a Blender capacidades que no estén respaldadas por la documentación.
+
+### SUBTEMÁTICA 1.1. BLENDER EN LA INDUSTRIA
+
+Explica las aplicaciones de Blender en:
+- Videojuegos.
+- Animación.
+- Cine y producción audiovisual.
+- Efectos visuales.
+- Visualización tridimensional.
+- Impresión 3D.
+
+Incluye una galería audiovisual con enlaces verificables a proyectos realizados con Blender.
+
+Integra, como mínimo, estos recursos mencionados en el Word:
+
+**Agent 327: Operation Barbershop**
+https://www.youtube.com/watch?v=mN0zPOpADL4
+
+**Sprite Fright**
+https://www.youtube.com/watch?v=X4MXWcx4jUA
+
+**FLOW — tráiler oficial**
+https://www.youtube.com/watch?v=ZgZccxuj2RY
+
+Verifica la disponibilidad y la pertinencia de los enlaces antes de mostrarlos. Si alguno no funciona o no puede verificarse, no lo presentes como confirmado; conserva un espacio para sustituirlo.
+
+Presenta cada recurso mediante una tarjeta que contenga:
+- Imagen o miniatura.
+- Título.
+- Descripción breve.
+- Tipo de producción.
+- Botón para reproducir o abrir el recurso.
+
+Cuando sea posible, integra los videos en reproductores incrustados. Si no se puede incrustar un video, utiliza un enlace visible.
+
+Añade una explicación breve sobre cómo estos proyectos ilustran el uso de herramientas 3D en la producción audiovisual.
+
+### SUBTEMÁTICA 1.2. INTERFAZ Y NAVEGACIÓN
+
+Explica los componentes principales de la interfaz de Blender:
+
+- Viewport: área de visualización y manipulación de la escena 3D.
+- Outliner: listado y organización de los objetos de la escena.
+- Properties: panel de propiedades y configuración.
+- Timeline: línea de tiempo utilizada para organizar y visualizar la animación.
+
+Puedes añadir otros componentes relevantes si están respaldados por el manual oficial y ayudan a comprender la interfaz.
+
+#### INTERACCIÓN OBLIGATORIA: LABELED GRAPHICS
+
+Implementa una actividad visual interactiva de tipo **Labeled Graphics**, con una imagen de la interfaz de Blender y etiquetas seleccionables.
+
+No basta con poner una imagen acompañada de texto.
+
+La interacción debe funcionar así:
+
+1. Muestra una captura o ilustración clara de la interfaz de Blender.
+2. Coloca marcadores visuales sobre las diferentes áreas.
+3. Cada marcador debe ser seleccionable mediante clic o toque.
+4. Al seleccionar un marcador, muestra el nombre del componente, su función y un ejemplo de uso.
+5. Resalta visualmente el área seleccionada.
+6. Permite cerrar la explicación y seleccionar otra zona.
+7. Incluye una opción para explorar todos los componentes y una indicación de cuáles ya fueron consultados.
+
+Usa etiquetas como Viewport, Outliner, Properties y Timeline.
+
+Si no se dispone de una captura adecuada, crea una ilustración esquemática propia y claramente identificada como representación ilustrativa. No simules que es una captura real.
+
+La interacción debe ser accesible mediante teclado y dispositivos táctiles.
+
+### SUBTEMÁTICA 1.2.1. ESPACIO 3D Y NAVEGACIÓN
+
+Explica los tres ejes cartesianos:
+
+- X: rojo.
+- Y: verde.
+- Z: azul.
+
+Aclara cómo se relacionan con la orientación espacial y las transformaciones.
+
+Enseña los controles fundamentales del Viewport:
+
+- Botón central del ratón: orbitar la vista.
+- Shift + botón central: desplazar la vista.
+- Rueda del ratón: acercar o alejar la vista.
+
+Incluye un recurso visual interactivo de los ejes X, Y y Z, además de un espacio reservado para un video que demuestre la navegación en Blender.
+
+Agrega una pequeña actividad de reconocimiento en la que el estudiante deba identificar qué control permite orbitar, desplazar o acercar la vista.
+
+Verifica los atajos y controles con el manual oficial, teniendo en cuenta que algunas configuraciones pueden modificarlos.
+
+### SUBTEMÁTICA 1.3. SELECCIÓN Y TRANSFORMACIÓN
+
+Explica las transformaciones fundamentales:
+
+- G: mover.
+- R: rotar.
+- S: escalar.
+
+Demuestra cómo restringir una transformación a un eje. Por ejemplo, S y después Z para escalar sobre el eje Z.
+
+Incluye ejemplos visuales de un objeto antes y después de cada transformación.
+
+Utiliza teclas visuales, animaciones breves o secuencias de pasos. El estudiante debe comprender qué hace cada atajo y cuándo utilizarlo.
+
+### SUBTEMÁTICA 1.3.1. SHORTCUTS DE TRANSFORMACIÓN
+
+Profundiza en el uso de G, R y S y su combinación con los ejes.
+
+Incorpora:
+- Una tabla visual de atajos.
+- Ejemplos prácticos.
+- Espacios para videos cortos de demostración.
+- Una actividad de asociación entre comandos y resultados.
+
+Ejemplos que puedes explicar:
+- G para mover un objeto.
+- R para rotarlo.
+- S para cambiar su escala.
+- G seguido de X para restringir el movimiento al eje X.
+- R seguido de Z para rotar alrededor del eje Z.
+- S seguido de Z para escalar sobre el eje Z.
+
+Aclara que el resultado depende del modo de trabajo, la selección y las opciones de transformación activas.
+
+### SUBTEMÁTICA 1.4. EDICIÓN DE MALLAS Y MODELADO
+
+Explica la diferencia entre Object Mode y Edit Mode.
+
+Presenta:
+- Object Mode: permite seleccionar y transformar objetos como unidades.
+- Edit Mode: permite modificar la geometría de la malla.
+- Vértices: puntos de la malla.
+- Aristas: líneas que conectan vértices.
+- Caras: superficies delimitadas por aristas.
+
+Explica el uso de Tab para alternar entre los modos y los accesos 1, 2 y 3 para cambiar entre selección de vértices, aristas y caras cuando corresponda a la configuración y versión utilizada.
+
+Incluye un recurso visual comparativo donde el estudiante pueda seleccionar un vértice, una arista o una cara y observar una explicación de su función.
+
+### SUBTEMÁTICA 1.4.1. HERRAMIENTAS Y TÉCNICAS DE MODELADO
+
+Explica dos herramientas fundamentales:
+
+**Extrude — E**
+
+Muestra cómo permite crear nueva geometría a partir de una región seleccionada.
+
+**Loop Cut — Ctrl + R**
+
+Muestra cómo permite añadir cortes y subdivisiones a la malla.
+
+Presenta ejemplos visuales de antes y después, acompañados de instrucciones paso a paso.
+
+Reserva espacios para videos breves que muestren las operaciones en tiempo real.
+
+Incluye una demostración progresiva en la que un cubo básico se transforma mediante extrusión, cortes y transformaciones.
+
+### SUBTEMÁTICA 1.5. PROYECTO Y EVALUACIÓN FINAL
+
+Explica el reto práctico descrito en el Word: comenzar con el cubo inicial de Blender y convertirlo en un objeto tridimensional reconocible mediante transformaciones y edición de mallas.
+
+El estudiante debe comprender:
+- Qué debe construir.
+- Qué herramientas puede utilizar.
+- Cómo guardar el archivo .blend.
+- Qué evidencias debe entregar.
+- Cómo explicar brevemente el procedimiento realizado.
+
+Presenta una guía visual por etapas y reserva un espacio para un ejemplo del resultado final.
+
+No cambies los requisitos académicos del reto establecidos en el documento.
+
+## 7. SECCIÓN 3: EVALUACIÓN
+
+Esta sección debe reunir las tres actividades del Word. Las actividades deben ser funcionales, interactivas y coherentes con los contenidos estudiados.
+
+### ACTIVIDAD 1. ARRASTRAR Y CONECTAR — “CONOCE BLENDER”
+
+Desarrolla una actividad interactiva donde el estudiante relacione conceptos, herramientas, funciones y atajos de teclado.
+
+Incluye asociaciones como:
+- Mover → G.
+- Rotar → R.
+- Escalar → S.
+- Extruir → E.
+- Vista de la escena → Viewport.
+- Lista de objetos → Outliner.
+
+Verifica que cada asociación sea correcta para el contexto presentado.
+
+Características:
+- Elementos que se puedan arrastrar.
+- Zonas de destino claramente identificadas.
+- Alternativa accesible de selección y asociación mediante clic o toque.
+- Indicadores de respuestas correctas e incorrectas.
+- Retroalimentación inmediata.
+- Botón para comprobar respuestas.
+- Opción para volver a intentarlo.
+- Resultado final de la actividad.
+
+No muestres todas las respuestas correctas antes de que el estudiante interactúe.
+
+### ACTIVIDAD 2. QUIZ DE CONOCIMIENTOS — “PON A PRUEBA LO APRENDIDO”
+
+Implementa un cuestionario interactivo de **10 preguntas de selección múltiple**, tal como establece el Word.
+
+Las preguntas deben evaluar:
+- Conceptos generales de Blender.
+- Aplicaciones del software.
+- Componentes de la interfaz.
+- Navegación del espacio 3D.
+- Atajos de teclado.
+- Transformaciones.
+- Object Mode y Edit Mode.
+- Vértices, aristas y caras.
+- Extrude y Loop Cut.
+- Aplicación práctica de los conocimientos.
+
+Cada pregunta debe incluir:
+- Enunciado claro.
+- Cuatro alternativas cuando sea apropiado.
+- Una respuesta correcta.
+- Retroalimentación explicativa.
+- Indicador de avance.
+- Puntuación actualizada.
+- Resumen de resultados al finalizar.
+
+Respeta los dos intentos establecidos en el Word. Si se permite repetir la actividad, conserva el historial de intentos durante la sesión y explica cómo funciona.
+
+La calificación debe calcularse mediante lógica real, no mediante valores aleatorios ni resultados simulados.
+
+Al terminar, muestra la puntuación, las respuestas que requieren revisión y recomendaciones de repaso.
+
+### ACTIVIDAD 3. RETO PRÁCTICO — “DEL CUBO A MI CREACIÓN”
+
+Presenta el reto práctico del documento original.
+
+El estudiante deberá:
+1. Abrir Blender.
+2. Partir del cubo inicial.
+3. Aplicar transformaciones mediante G, R y S.
+4. Utilizar Extrude y Loop Cut cuando sean necesarios.
+5. Crear un modelo tridimensional reconocible.
+6. Guardar el proyecto en formato .blend.
+7. Adjuntar una captura de pantalla del modelo en el Viewport.
+8. Explicar brevemente los pasos y herramientas utilizados.
+
+Permite que el estudiante consulte una lista de comprobación antes de entregar.
+
+Incluye:
+- Instrucciones claras.
+- Un espacio para adjuntar el archivo .blend si la plataforma lo admite.
+- Un espacio para adjuntar la captura.
+- Un campo para escribir la explicación del proceso.
+- Indicaciones para la entrega en el LMS.
+
+No afirmes que el archivo ha sido enviado o evaluado si el entorno no tiene una función real de entrega. Si la plataforma no admite archivos, presenta las instrucciones para guardar y entregar las evidencias por el medio institucional.
+
+### RÚBRICA DEL RETO PRÁCTICO
+
+Incluye una rúbrica visual que permita comprender los criterios de evaluación.
+
+Propón una distribución inicial de 100 puntos:
+- Uso correcto de las transformaciones: 25 puntos.
+- Aplicación de Extrude y Loop Cut cuando sean pertinentes: 25 puntos.
+- Modelo final reconocible y coherente: 25 puntos.
+- Entrega del archivo, captura y explicación del proceso: 25 puntos.
+
+Presenta esta distribución como una propuesta de diseño evaluativo que debe validarse con el docente, no como una ponderación oficial del Word.
+
+## 8. INNOVACIÓN PEDAGÓGICA: RADAR DE HÁBITOS
+
+Integra, si es técnicamente viable, la propuesta de innovación incluida en el Word.
+
+Crea un indicador visual denominado **“De novato a artista 3D”** que acompañe al estudiante durante el OVA.
+
+El indicador debe mostrar el progreso en la exploración de los componentes de la interfaz y en la realización de las actividades.
+
+Puedes utilizar:
+- Una barra de progreso.
+- Indicadores de lecciones completadas.
+- Insignias por logros.
+- Mensajes motivadores.
+- Un resumen de los atajos practicados.
+
+El progreso debe cambiar a partir de acciones reales del usuario, como completar una actividad o consultar un componente interactivo.
+
+No inventes datos ni presentes el indicador como una medición científica de habilidad. Es un recurso pedagógico de seguimiento y motivación.
+
+Si el usuario recarga la página, conserva el progreso mediante almacenamiento local únicamente cuando sea técnicamente posible y apropiado.
+
+## 9. CITAS, REFERENCIAS Y RIGOR ACADÉMICO
+
+Esta regla es obligatoria para todo el OVA.
+
+**Toda afirmación factual, definición, dato histórico, explicación técnica o información tomada de una fuente externa debe contar con una cita identificable.**
+
+Utiliza citas en el texto con el formato autor-año, por ejemplo: (Blender Foundation, s. f.).
+
+Si utilizas una fuente que contiene una fecha de publicación verificable, emplea el año correspondiente.
+
+No inventes fechas, autores ni publicaciones.
+
+### Referencias iniciales proporcionadas en el Word
+
+Utiliza y verifica, según corresponda, las siguientes fuentes:
+
+- Blender Foundation. Sitio oficial: https://www.blender.org/
+- Blender Foundation. Descarga de Blender: https://www.blender.org/download/
+- Blender Foundation. Manual oficial en español: https://docs.blender.org/manual/es/latest/
+- Blender Foundation. Mapa de teclado predeterminado: https://docs.blender.org/manual/es/latest/interface/keymap/blender_default.html
+- Brown, H. Guía de atajos de Blender: https://hollisbrown.github.io/blendershortcuts/
+
+El Word también incluye referencias académicas relacionadas con el uso educativo de Blender, la interfaz del software y la previsualización audiovisual. Comprueba los datos bibliográficos antes de utilizarlas como respaldo de afirmaciones específicas.
+
+### Reglas de citación
+
+1. Coloca las citas cerca de las afirmaciones que respaldan.
+2. Incluye una lista final de referencias dentro de la sección Contenido, al finalizar las lecciones.
+3. Utiliza un formato bibliográfico consistente, preferiblemente APA 7.
+4. Incluye enlaces directos a las fuentes cuando estén disponibles.
+5. Si una fuente respalda una imagen, un video o un recurso externo, identifica su procedencia.
+6. No atribuyas a una investigación conclusiones que esta no respalde.
+7. No utilices referencias inventadas para completar una bibliografía.
+8. Si una información no puede verificarse, omítela o identifícala como pendiente de verificación.
+
+Las citas no deben saturar el diseño. Utiliza un tamaño legible y una presentación discreta, sin eliminarlas ni ocultarlas.
+
+## 10. REQUISITOS TÉCNICOS Y FUNCIONALIDAD
+
+Construye una experiencia web real, no una maqueta estática.
+
+Si la herramienta permite generar código, utiliza HTML, CSS y JavaScript, o su entorno equivalente, para crear componentes funcionales.
+
+Requisitos:
+- Navegación funcional entre Introducción, Contenido y Evaluación.
+- Navegación interna por las temáticas y subtemáticas.
+- Interacciones de clic, toque y teclado.
+- Actividades evaluativas funcionales.
+- Cálculo real de puntuaciones.
+- Retroalimentación inmediata.
+- Diseño responsive.
+- Estados visuales de selección, acierto, error y progreso.
+- Enlaces externos funcionales.
+- Marcadores de posición para videos e imágenes aún no incorporados.
+- Código organizado y fácil de mantener.
+- Buen rendimiento y tiempos de carga razonables.
+
+No incluyas botones decorativos que aparenten hacer algo sin ejecutar ninguna acción.
+
+No dejes enlaces rotos, reproductores vacíos que parezcan funcionales, controles sin respuesta ni textos de ejemplo sin reemplazar.
+
+Si alguna función no puede implementarse en el entorno disponible, indica la limitación y proporciona una alternativa funcional.
+
+## 11. RECURSOS MULTIMEDIA Y ESPACIOS RESERVADOS
+
+Deja espacios visualmente bien diseñados para incorporar posteriormente:
+- Videos explicativos propios.
+- Capturas de pantalla de Blender.
+- GIF o grabaciones cortas de demostraciones.
+- Imágenes del proceso de modelado.
+- Ejemplos de resultados.
+- Recursos descargables.
+
+Cada espacio debe tener un título, una breve descripción y una proporción visual adecuada.
+
+Usa marcadores de posición claros, por ejemplo: “Aquí se incorporará el video de navegación por el Viewport”.
+
+No inventes archivos multimedia ni utilices imágenes sin relación con el contenido.
+
+Cuando uses recursos externos, comprueba que sean pertinentes, que los enlaces funcionen y que su utilización respete las condiciones de acceso y licencia.
+
+## 12. CONTROL DE CALIDAD ANTES DE FINALIZAR
+
+Antes de entregar el OVA, verifica los siguientes puntos:
+
+- Existen exactamente tres secciones principales: Introducción, Contenido y Evaluación.
+- Los autores y los datos institucionales aparecen correctamente.
+- El tutorial de instalación de Blender está dentro de Introducción.
+- El contenido respeta el Word y conserva todas sus temáticas y subtemáticas.
+- La historia y las aplicaciones de Blender se explican con fuentes verificables.
+- Los videos de proyectos de Blender tienen enlaces funcionales o marcadores de posición claramente identificados.
+- La interfaz utiliza un recurso interactivo real de tipo Labeled Graphics.
+- Los atajos y las herramientas están explicados correctamente.
+- Todas las actividades pueden utilizarse y muestran retroalimentación.
+- El quiz contiene exactamente 10 preguntas.
+- El reto práctico conserva los requisitos del documento.
+- Las citas respaldan las afirmaciones factuales.
+- La bibliografía no contiene referencias inventadas.
+- Todos los párrafos explicativos tienen alineación justificada.
+- La interfaz se adapta a diferentes tamaños de pantalla.
+- No hay errores ortográficos, botones inactivos ni elementos visuales desordenados.
+- Los espacios multimedia pueden sustituirse fácilmente por recursos reales.
+
+## 13. INSTRUCCIÓN FINAL DE EJECUCIÓN
+
+Analiza primero el Word adjunto y utiliza su contenido como base de todo el desarrollo.
+
+Después, construye el OVA completo siguiendo esta especificación.
+
+Prioriza la calidad visual, la claridad pedagógica, la fidelidad al documento, la precisión de las citas y la funcionalidad real de las interacciones.
+
+No reduzcas el proyecto a una simple página con tres bloques de texto. Las tres secciones deben contener una experiencia de aprendizaje organizada, progresiva y visualmente atractiva.
+
+No agregues secciones principales adicionales ni elimines las temáticas del guion original.
+
+Si el entorno permite generar y ejecutar el proyecto, entrega una versión funcional que pueda probarse. Si requiere archivos externos, especifica cuáles faltan y deja sus espacios preparados.
+
+**Resultado esperado:** un OVA moderno, interactivo, legible, bien organizado, totalmente en español y fundamentado en el documento Word, que permita al estudiante aprender los conceptos básicos de Blender, explorar su interfaz, practicar sus atajos y demostrar sus conocimientos mediante las tres actividades propuestas.
