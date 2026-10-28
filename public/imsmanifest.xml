@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="MANIFEST-OVA-BLENDER-USB" version="1.2"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+      <general>
+        <title>
+          <langstring xml:lang="es">Blender 4.x: Dominando la Interfaz y Shortcuts - Objeto Virtual de Aprendizaje (OVA)</langstring>
+        </title>
+        <language>es</language>
+        <description>
+          <langstring xml:lang="es">Objeto Virtual de Aprendizaje interactivo para el aprendizaje práctico de la interfaz de usuario y atajos de teclado en Blender 4.x mediante simulador 3D con Three.js, radar de hábitos y evaluación formativa. Desarrollado en la Universidad Simón Bolívar (Cúcuta, Colombia).</langstring>
+        </description>
+        <keyword>
+          <langstring xml:lang="es">Blender 3D</langstring>
+        </keyword>
+        <keyword>
+          <langstring xml:lang="es">Shortcuts</langstring>
+        </keyword>
+        <keyword>
+          <langstring xml:lang="es">Modelado 3D</langstring>
+        </keyword>
+        <keyword>
+          <langstring xml:lang="es">OVA</langstring>
+        </keyword>
+      </general>
+      <lifecycle>
+        <contribute>
+          <role>
+            <source>
+              <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+              <langstring xml:lang="es">Author</langstring>
+            </value>
+          </role>
+          <centity>
+            <vcard>BEGIN:VCARD&#xD;
+FN:Sebastián Mendieta y Danna Duarte&#xD;
+ORG:Universidad Simón Bolívar - Facultad de Ingenierías&#xD;
+END:VCARD</vcard>
+          </centity>
+        </contribute>
+      </lifecycle>
+      <educational>
+        <learningresourcetype>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="es">Simulation / Exercise</langstring>
+          </value>
+        </learningresourcetype>
+        <intendedenduserrole>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="es">Learner</langstring>
+          </value>
+        </intendedenduserrole>
+      </educational>
+    </lom>
+  </metadata>
+  <organizations default="USB_BLENDER_ORG">
+    <organization identifier="USB_BLENDER_ORG">
+      <title>Blender 4.x: Dominando la Interfaz y Shortcuts (OVA)</title>
+      <item identifier="ITEM_BLENDER_OVA" identifierref="RES_BLENDER_OVA">
+        <title>Blender 4.x: Interfaz y Atajos de Teclado</title>
+        <adlcp:masteryscore>70</adlcp:masteryscore>
+        <adlcp:datafromlms></adlcp:datafromlms>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES_BLENDER_OVA" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="assets/"/>
+    </resource>
+  </resources>
+</manifest>

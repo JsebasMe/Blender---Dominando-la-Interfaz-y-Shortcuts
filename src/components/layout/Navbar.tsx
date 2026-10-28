@@ -12,8 +12,7 @@ import {
   Sparkles,
   GraduationCap,
   Volume2,
-  VolumeX,
-  Download
+  VolumeX
 } from 'lucide-react';
 import { soundFX } from '../../utils/audioFeedback';
 import { getAssetUrl } from '../../utils/assetUrl';
@@ -109,17 +108,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Right Action: Sound Feedback & Radar de Hábitos Widget Trigger */}
           <div className="flex items-center gap-2">
-            {/* Direct Download ZIP Button */}
-            <a
-              href={getAssetUrl('ova-blender.zip')}
-              download="ova-blender.zip"
-              className="p-2 md:px-2.5 md:py-2 rounded-xl border border-slate-800 bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-white transition-all text-xs font-semibold flex items-center gap-1.5 shadow-sm"
-              title="Descargar código completo del OVA (.ZIP)"
-            >
-              <Download className="w-4 h-4 text-amber-400" />
-              <span className="hidden md:inline text-[11px] font-mono">Código .ZIP</span>
-            </a>
-
             {/* Audio Feedback Toggle */}
             <button
               onClick={handleToggleAudio}

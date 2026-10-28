@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { HabitLevel, HabitProfile, HabitRadarState } from '../types/ova';
 import { soundFX } from '../utils/audioFeedback';
+import { scorm } from '../utils/scorm';
 
 const STORAGE_KEY = 'blender_ova_habits_v1';
 
@@ -236,6 +237,11 @@ export const HabitRadarProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     description,
     nextGoal
   };
+
+  // Sync real-time progress and score with LMS via SCORM 1.2 / 2004
+  useEffect(() => {
+    scorm.setScore(overallScore, overallScore >= 70);
+  }, [overallScore]);
 
   return (
     <HabitRadarContext.Provider

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainSection } from '../../types/ova';
 import { INSTITUTIONAL_DATA } from '../../data/contentData';
-import { Box, GraduationCap, Building2, ExternalLink, Heart, Download } from 'lucide-react';
+import { Box, GraduationCap, Building2, ExternalLink, Heart } from 'lucide-react';
 import { getAssetUrl } from '../../utils/assetUrl';
 
 interface FooterProps {
@@ -78,16 +78,6 @@ export const Footer: React.FC<FooterProps> = ({ onSelectSection }) => {
                 >
                   3. Evaluación (3 Actividades Prácticas)
                 </button>
-              </li>
-              <li className="pt-2">
-                <a
-                  href={getAssetUrl('ova-blender.zip')}
-                  download="ova-blender.zip"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-amber-400 font-mono text-[11px] transition-colors"
-                >
-                  <Download className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Descargar Código (.ZIP)</span>
-                </a>
               </li>
             </ul>
           </div>

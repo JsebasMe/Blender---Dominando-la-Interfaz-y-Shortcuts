@@ -1,27 +1,9 @@
 import React, { useState } from 'react';
-import { Video, Play, ExternalLink, Settings2, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Video, Play, ExternalLink } from 'lucide-react';
 
 export const WelcomeVideoModal: React.FC = () => {
-  // Configured with requested Blender download & installation tutorial video
-  const [videoUrl, setVideoUrl] = useState<string>('https://www.youtube.com/embed/gKAcnpNYIA0');
-  const [isEditingUrl, setIsEditingUrl] = useState(false);
-  const [tempUrl, setTempUrl] = useState('');
+  const videoUrl = 'https://www.youtube.com/embed/gKAcnpNYIA0';
   const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleApplyUrl = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (tempUrl.trim()) {
-      let finalEmbed = tempUrl.trim();
-      if (finalEmbed.includes('watch?v=')) {
-        finalEmbed = finalEmbed.replace('watch?v=', 'embed/');
-      } else if (finalEmbed.includes('youtu.be/')) {
-        finalEmbed = finalEmbed.replace('youtu.be/', 'www.youtube.com/embed/');
-      }
-      setVideoUrl(finalEmbed);
-      setIsEditingUrl(false);
-      setIsPlaying(true);
-    }
-  };
 
   return (
     <section className="space-y-4">
@@ -55,48 +37,8 @@ export const WelcomeVideoModal: React.FC = () => {
             <span>Ver en YouTube</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
-
-          <button
-            onClick={() => {
-              setTempUrl(videoUrl);
-              setIsEditingUrl(!isEditingUrl);
-            }}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 font-medium transition-colors"
-            title="Personalizar URL del video tutorial"
-          >
-            <Settings2 className="w-3.5 h-3.5" />
-            <span>Configurar video</span>
-          </button>
         </div>
       </div>
-
-      {/* URL Customization Bar */}
-      {isEditingUrl && (
-        <form onSubmit={handleApplyUrl} className="p-4 rounded-xl bg-slate-900 border border-slate-700 flex flex-col sm:flex-row gap-2 animate-fadeIn">
-          <input
-            type="text"
-            value={tempUrl}
-            onChange={(e) => setTempUrl(e.target.value)}
-            placeholder="Pega aquí el enlace de YouTube o youtu.be (ej. https://youtu.be/...)"
-            className="flex-1 px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 font-mono"
-          />
-          <div className="flex items-center gap-2">
-            <button
-              type="submit"
-              className="px-4 py-2 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition-colors"
-            >
-              Aplicar enlace
-            </button>
-            <button
-              type="button"
-              onClick={() => setIsEditingUrl(false)}
-              className="px-3 py-2 rounded-lg bg-slate-800 text-slate-300 text-xs hover:text-white"
-            >
-              Cancelar
-            </button>
-          </div>
-        </form>
-      )}
 
       {/* 16:9 Video Container with Playback / Placeholder */}
       <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 shadow-2xl group">

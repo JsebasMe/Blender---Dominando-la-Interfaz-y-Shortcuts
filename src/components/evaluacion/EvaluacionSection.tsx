@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { DragDropActivity } from './DragDropActivity';
 import { QuizActivity } from './QuizActivity';
 import { PracticalChallengeActivity } from './PracticalChallengeActivity';
-import { Puzzle, FileQuestion, FolderGit2, CheckCircle2, Award } from 'lucide-react';
+import { Puzzle, FileQuestion, FolderGit2, CheckCircle2, Award, Download, School, Layers } from 'lucide-react';
 import { useHabitRadar } from '../../context/HabitRadarContext';
+import { getAssetUrl } from '../../utils/assetUrl';
 
 export const EvaluacionSection: React.FC = () => {
-  const { state, profile } = useHabitRadar();
+  const { state, profile, scormInfo, radarScores } = useHabitRadar();
   const [activeTab, setActiveTab] = useState<'all' | 'act1' | 'act2' | 'act3'>('all');
 
   return (
@@ -40,6 +41,46 @@ export const EvaluacionSection: React.FC = () => {
           <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center font-bold">
             <Award className="w-6 h-6" />
           </div>
+        </div>
+      </div>
+
+      {/* SCORM / LMS Sincronización e Información Institucional */}
+      <div className="p-5 sm:p-6 rounded-2xl bg-slate-950/80 border border-slate-800/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="flex items-start gap-3.5">
+          <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+            <School className="w-5 h-5" />
+          </div>
+          <div className="space-y-1">
+            <div className="flex items-center gap-2">
+              <h3 className="text-sm font-bold text-white">
+                Sincronización con Plataformas Educativas (LMS)
+              </h3>
+              <span className={`text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full border ${
+                scormInfo.connected 
+                  ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400' 
+                  : 'bg-slate-800 border-slate-700 text-slate-400'
+              }`}>
+                {scormInfo.connected 
+                  ? `Conectado a LMS (${scormInfo.studentName || 'Estudiante'} · SCORM ${scormInfo.version})` 
+                  : 'Estándar SCORM 1.2 Compatible'}
+              </span>
+            </div>
+            <p className="text-xs text-slate-400 max-w-2xl leading-relaxed">
+              Las calificaciones de las 3 actividades (ponderación 0-100%) y el estado de aprobación (umbral mínimo: 70%) se transmiten automáticamente al libro de calificaciones de Moodle, Canvas, Blackboard o Chamilo vía API SCORM.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 self-stretch md:self-auto shrink-0">
+          <a
+            href={getAssetUrl('ova-blender-scorm.zip')}
+            download="ova-blender-scorm.zip"
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 font-bold text-xs shadow-md shadow-amber-500/20 transition-all"
+            title="Descargar paquete .ZIP en formato SCORM 1.2 para importar en tu aula virtual"
+          >
+            <Download className="w-4 h-4 text-slate-950" />
+            <span>Descargar Paquete SCORM (.ZIP)</span>
+          </a>
         </div>
       </div>
 
